@@ -7,7 +7,7 @@ export default function Success() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Toolbox Template!</title>
+        <title>Keystone Healing Arts form success</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
