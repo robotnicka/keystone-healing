@@ -5,4 +5,4 @@ module.exports = defineConfig({
     baseUrl: 'http://localhost:8888',
     supportFile: false,
   },
-});
+})
