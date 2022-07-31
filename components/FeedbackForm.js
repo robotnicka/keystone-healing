@@ -1,4 +1,4 @@
-import styles from './FeedbackForm.module.css'
+import styles from './FeedbackForm.module.css';
 
 export default function FeedbackForm() {
   return (
@@ -46,5 +46,5 @@ export default function FeedbackForm() {
         Submit
       </button>
     </form>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import styles from './Footer.module.scss'
+import styles from './Footer.module.scss';
 
 export default function Footer() {
   return (
@@ -13,5 +13,5 @@ export default function Footer() {
         for you
       </footer>
     </>
-  )
+  );
 }

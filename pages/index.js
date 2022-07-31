@@ -1,28 +1,20 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-import FeedbackForm from '@components/FeedbackForm'
-import JokeBlock from '@components/JokeBlock'
+import FeedbackForm from '@components/FeedbackForm';
+import JokeBlock from '@components/JokeBlock';
+import Layout from '@components/Layout';
+import siteMetadata from 'assets/data/siteMetadata';
+import HeadSeo from 'components/HeadSeo';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Keystone Healing Arts</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Keystone Healing Arts" />
-        <hr />
-        <p className="description">
-          Here's an example of a Netlify Form! When you fill this out, the
-          submissions can be found in the Netlify Admin site.
-        </p>
+    <>
+      <Layout title="Home">
+        <img src="keystonelogo.svg" />
+        <h2>Your health is the keystone to your life.</h2>
+        <button>Book Appointment</button>
+        <button>Contact Us</button>
         <FeedbackForm />
         <JokeBlock />
-      </main>
-      <Footer />
-    </div>
-  )
+      </Layout>
+    </>
+  );
 }

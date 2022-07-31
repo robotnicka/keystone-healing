@@ -1,3 +1,5 @@
+@use '../assets/variables/colors';
+
 html,
 body {
   padding: 0;
@@ -21,4 +23,29 @@ main {
 
 hr {
   width: 100%;
+}
+
+body {
+  background-color: colors.$background;
+  color: colors.$base-font;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.paragraph--intro {
+  font-size: 25px;
+}
+
+a {
+  color: colors.$base-font;
+}
+
+a:visited {
+  color: colors.$base-font;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: colors.$link-hover;
 }

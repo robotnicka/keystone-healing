@@ -22,5 +22,5 @@ export default function Header({ title }) {
         ! Happy coding!
       </p>
     </>
-  )
+  );
 }

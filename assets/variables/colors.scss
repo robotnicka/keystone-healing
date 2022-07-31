@@ -4,7 +4,7 @@ $keystone: #005295;
 $light-spruce: #49868c;
 $spruce: #19444f;
 $acqua: #8fc7c2;
-$acqua-transparent: rgba(143, 199, 194, 0.25);
+$acqua-transparent: rgba($acqua, 0.25);
 
 // Applied colors
 $base-font: $denim;

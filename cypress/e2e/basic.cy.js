@@ -1,9 +1,9 @@
 describe('empty spec', () => {
   beforeEach(() => {
-    cy.visit('/')
-  })
+    cy.visit('/');
+  });
 
   it('renders the form', () => {
-    cy.get('form').should('be.visible')
-  })
-})
+    cy.get('form').should('be.visible');
+  });
+});

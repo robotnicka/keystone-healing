@@ -1,17 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
-import Footer from '@components/Footer'
+import Link from 'next/link';
+import Layout from '@components/Layout';
+import HeadSeo from '@components/HeadSeo';
 
 export default function Success() {
   return (
-    <div className="container">
-      <Head>
-        <title>Keystone Healing Arts form success</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
+    <>
+      <Layout title="Contact form success">
         <h1>Submission Received!</h1>
         <p>
           Thank you for your feedback! Head back to the{' '}
@@ -20,9 +14,7 @@ export default function Success() {
           </Link>
           .
         </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+      </Layout>
+    </>
+  );
 }
