@@ -1,0 +1,24 @@
+.nav {
+  font-size: 14px;
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    + li {
+      margin-left: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.phoneIcon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}

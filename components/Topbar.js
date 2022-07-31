@@ -1,7 +1,12 @@
-import siteMetadata from 'assets/data/siteMetadata';
+import NavigationMain from './NavigationMain';
+import NavigationSecondary from './NavigationSecondary';
+import styles from './Topbar.module.scss';
 
 export default function Topbar() {
   return (
-    <div className="topbar">book appointment | {siteMetadata.phoneNumber}</div>
+    <div className={styles.topbar}>
+      <NavigationMain />
+      <NavigationSecondary />
+    </div>
   );
 }
