@@ -1,5 +1,5 @@
 const path = require('path');
-const withSass = require('@zeit/next-sass');
+const withSass = require('sass');
 module.exports = {
   webpack: (cfg) => {
     cfg.module.rules.push({
