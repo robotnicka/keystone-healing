@@ -1,48 +1,29 @@
 @use '../assets/variables/colors.scss';
+@use '../assets/variables/breakpoints.scss' as *;
+
 // @use 'variables/mixins' as *;
 // @use 'placeholders/text';
 
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 75px;
   padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
   background-color: colors.$acqua-transparent;
-  font-family: 'Montserrat', sans-serif;
 
-  &__logo {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 80px;
-    text-align: center;
+  // @include media($tablet-landscape) {
+  //
+  //   float: left;
+  //   text-align: left;
+  // }
+
+  a {
+    width: 140px;
 
     // @include media($tablet-landscape) {
-    //   width: 25%;
-    //   float: left;
-    //   text-align: left;
+    //   width: 212px;
     // }
-
-    a {
-      width: 140px;
-
-      // @include media($tablet-landscape) {
-      //   width: 212px;
-      // }
-    }
-  }
-
-  .logo {
-    height: 1em;
-    margin: 5px;
-  }
-
-  .site-footer {
   }
 
   h4,
@@ -54,6 +35,10 @@
       margin-top: 57px;
     }
   }
+}
+
+.column {
+  width: 100%;
 }
 
 .widget_nav_menu,
@@ -90,6 +75,26 @@
       background-repeat: no-repeat;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 17 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath d='M8.5,0C13.195,0 17,3.895 17,8.698C17,14.227 11.812,18.916 9.9,23.246C9.455,24.251 7.545,24.251 7.1,23.246C5.188,18.916 0,14.227 0,8.698C0,3.895 3.805,0 8.5,0ZM8.5,3.994C10.997,3.994 13.021,6.066 13.021,8.622C13.021,11.177 10.997,13.25 8.5,13.25C6.003,13.25 3.979,11.177 3.979,8.622C3.979,6.066 6.003,3.994 8.5,3.994Z' style='fill:rgb(73,134,140);'/%3E%3C/svg%3E%0A");
     }
+  }
+}
+
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.footerColumns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include media(tablet-landscape) {
+    flex-direction: row;
   }
 }
 
