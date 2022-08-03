@@ -1,5 +1,6 @@
 const siteMetadata = {
   companyName: 'Keystone Healing Arts',
+  longCompanyName: 'Keystone Healing Arts Center, PLLC',
   phoneNumber: '(919) 896-8715',
   siteUrl: 'https://example.com',
   siteLogo: 'https://example.com/images/logo.png',
@@ -7,7 +8,9 @@ const siteMetadata = {
   email: 'yourName@example.com',
   address: (
     <address>
-      8522 Six Forks Rd STE 101
+      8522 Six Forks Rd
+      <br />
+      Suite 101
       <br />
       Raleigh, NC 27615
     </address>

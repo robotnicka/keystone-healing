@@ -37,8 +37,43 @@
   }
 }
 
+.copyright {
+  margin-top: 95px;
+  font-size: 12px;
+  text-align: center;
+}
+
 .column {
   width: 100%;
+  margin-bottom: 50px;
+  padding-right: 20px;
+
+  @include media(tablet-landscape) {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 55px;
+    margin-bottom: 16px;
+
+    @include media(tablet-landscape) {
+      margin-top: 0;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 50px;
+    }
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
 }
 
 .widget_nav_menu,
@@ -79,22 +114,41 @@
 }
 
 .logo {
-  display: block;
-  width: 50px;
-  height: 50px;
+  display: inline-block;
+  width: 120px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 80px;
+
+  @include media(tablet-landscape) {
+    width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.logoColumn {
   text-align: center;
+  margin-bottom: 50px;
+
+  @include media(tablet-landscape) {
+    text-align: left;
+  }
+}
+
+.logoContainer {
+  text-align: center;
+
+  @include media(tablet-landscape) {
+    text-align: left;
+  }
 }
 
 .footerColumns {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
   @include media(tablet-landscape) {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
 
