@@ -20,12 +20,12 @@ export default function Footer() {
           </section>
           <section className={styles.column}>
             <h4>
-              <img src="/location.svg" />
+              <img src="/location.svg" className={styles.locationIcon} />
               Location
             </h4>
             {siteMetadata.address}
             <h4>
-              <img src="/phone.svg" />
+              <img src="/phone.svg" className={styles.phoneIcon} />
               Call Us
             </h4>
             {siteMetadata.phoneNumber}
