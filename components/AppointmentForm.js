@@ -1,6 +1,4 @@
-import styles from './FeedbackForm.module.css';
-
-export default function FeedbackForm() {
+export default function AppointmentForm() {
   return (
     <form
       className={styles.form}
@@ -17,6 +15,17 @@ export default function FeedbackForm() {
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
+
+      <label for="start">Appointment requested date:</label>
+
+      <input
+        type="date"
+        id="start"
+        name="trip-start"
+        value="2018-07-22"
+        min="2018-01-01"
+        max="2018-12-31"
+      ></input>
 
       <label htmlFor="name">Name</label>
       <input

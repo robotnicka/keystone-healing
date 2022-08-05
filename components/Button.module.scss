@@ -1,0 +1,37 @@
+@use '../assets/variables/colors.scss';
+
+.button {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 29px;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+
+  + .button {
+    margin-left: 20px;
+  }
+}
+
+.primary {
+  background-color: colors.$keystone;
+  color: colors.$text-light;
+
+  &:hover {
+    color: colors.$background;
+  }
+}
+
+.secondary {
+  border: 2px solid colors.$keystone;
+  background-color: transparent;
+  color: colors.$keystone;
+
+  &:hover {
+    background-color: colors.$keystone;
+    color: colors.$background;
+  }
+}

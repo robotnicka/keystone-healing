@@ -1,0 +1,17 @@
+@use '../assets/variables/colors.scss';
+
+.Marquee {
+  background: linear-gradient(
+    to right,
+    colors.$acqua-transparent,
+    rgba(255, 255, 255, 0)
+  );
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.Logo {
+  display: inline-block;
+  width: 199px;
+  height: 125px;
+}

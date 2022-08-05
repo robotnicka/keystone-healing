@@ -1,4 +1,10 @@
+@use '../assets/variables/colors.scss';
+
 .topbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: colors.$acqua-transparent;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }

@@ -1,20 +1,14 @@
+import { Content } from '@components/Content';
 import FeedbackForm from '@components/FeedbackForm';
-import JokeBlock from '@components/JokeBlock';
 import Layout from '@components/Layout';
-import siteMetadata from 'assets/data/siteMetadata';
-import HeadSeo from 'components/HeadSeo';
+import { Marquee } from '@components/Marquee';
 
-export default function Home() {
+export default function Home({ children }) {
   return (
-    <>
-      <Layout title="Home">
-        <img src="keystonelogo.svg" />
-        <h2>Your health is the keystone to your life.</h2>
-        <button>Book Appointment</button>
-        <button>Contact Us</button>
-        <FeedbackForm />
-        <JokeBlock />
-      </Layout>
-    </>
+    <Layout title="Home">
+      <Marquee />
+      <FeedbackForm />
+      <Content>Main text.</Content>
+    </Layout>
   );
 }
