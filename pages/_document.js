@@ -1,21 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import HeadSeo from '@components/HeadSeo';
 
-export default function Document({
-  title,
-  description,
-  canonicalUrl,
-  ogTwitterImage,
-  ogType,
-  children,
-  ogImageUrl,
-  props,
-}) {
+export default function Document() {
   return (
     <Html lang="en-us">
-      <Head key={title}>
-        <HeadSeo {...props} />
-        {children}
+      <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

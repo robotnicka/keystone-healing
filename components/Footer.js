@@ -35,7 +35,7 @@ export default function Footer() {
             <NavigationFooter />
           </section>
           <section className={styles.column}>
-            <h4>hours</h4>
+            <h4>Hours</h4>
             <ul>
               <li>Tuesday: 2:00pm - 7:00pm</li>
               <li>Wednesday: 9:00am - 6:00pm </li>
