@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This site is built with Next.js and uses [React](https://reactjs.org/). It is a single-page application that uses [React Router](https://reactrouter.com/) to handle routing. CMS content is read via markdown using frontmatter.
+This site is built with Next.js and uses [React](https://reactjs.org/). It is a single-page application that uses [React Router](https://reactrouter.com/) to handle routing. CMS content is defined using [frontmatter](https://frontmatter.codes/docs/markdown) and markdown files are parsed with gray matter.
 
 ## How to use
 

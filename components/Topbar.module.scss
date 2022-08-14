@@ -2,9 +2,12 @@
 
 .topbar {
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   background-color: colors.$acqua-transparent;
   padding-top: 6px;
   padding-bottom: 6px;
+  backdrop-filter: blur(10px);
 }
