@@ -5,27 +5,81 @@ export default {
     repo: 'robotnicka/keystone-healing',
     branch: 'main',
   },
-  media_folder: 'public/img',
-  public_folder: 'img',
+  local_backend: true,
+  media_folder: 'public/images',
+  public_folder: 'images',
   collections: [
     {
-      name: 'pages',
-      label: 'Pages',
-      files: [
+      name: 'Pages',
+      label: 'Page',
+      editor: { preview: false },
+      label_singular: 'Page',
+      folder: 'content/pages',
+      create: true,
+      slug: '{{slug}}',
+      extension: 'md',
+      format: 'yaml-frontmatter',
+      fields: [
         {
-          label: 'Home',
-          name: 'home',
-          file: 'content/pages/home.md',
-          fields: [
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          required: true,
+        },
+        {
+          label: 'Builder',
+          name: 'builder',
+          widget: 'list',
+          types: [
             {
-              label: 'Hero Title',
-              name: 'hero_title',
-              widget: 'string',
+              label: 'Marquee',
+              name: 'header',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Marquee Image',
+                  name: 'photo',
+                  widget: 'image',
+                  required: true,
+                  media_library: { config: { multiple: false } },
+                },
+              ],
             },
             {
-              label: 'Hero Description',
-              name: 'hero_description',
-              widget: 'markdown',
+              label: 'Call To Action',
+              name: 'cta',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                },
+              ],
+            },
+            {
+              label: 'Content',
+              name: 'content',
+              widget: 'object',
+              fields: [
+                {
+                  name: 'Content',
+                  widget: 'markdown',
+                  required: true,
+                },
+              ],
             },
           ],
         },

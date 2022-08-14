@@ -16,6 +16,8 @@ export default function Home({ children }) {
         <li>Form set up</li>
         <li>Caching</li>
         <li>viewport set up</li>
+        <li>Favicon</li>
+        <li>Analytics</li>
       </ul>
       <FeedbackForm />
 

@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import config from '../cms/config';
 
 const CMS = dynamic(
@@ -10,7 +11,14 @@ const CMS = dynamic(
 );
 
 const AdminPage = () => {
-  return <CMS />;
+  return (
+    <>
+      <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Head>
+      <CMS />
+    </>
+  );
 };
 
 export default AdminPage;
