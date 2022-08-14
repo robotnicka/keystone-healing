@@ -2,15 +2,23 @@ import styles from './Marquee.module.scss';
 import { Logo } from './Logo';
 import { Button } from '@components/Button';
 
-export const Marquee = ({ children }) => {
+export function Marquee({ item }) {
   return (
-    <div className={styles.Marquee}>
-      <span className={styles.Logo}>
-        <Logo />
-      </span>
-      <h2>Your health is the keystone to your life.</h2>
-      <Button>Book Appointment</Button>
-      <Button type="secondary">Contact Us</Button>
-    </div>
+    <section className={styles.Marquee}>
+      <div className={styles.MarqueeContent}>
+        <span className={styles.Logo}>
+          <Logo />
+        </span>
+        <h1>{item.title}</h1>
+        <h2>{item.subtitle}</h2>
+        <div>
+          <Button>Book Appointment</Button>
+          <Button type="secondary">Contact Us</Button>
+        </div>
+      </div>
+      <div className={styles.MarqueeImage}>
+        <img src={item.photo} />
+      </div>
+    </section>
   );
-};
+}

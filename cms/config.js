@@ -33,7 +33,7 @@ export default {
           types: [
             {
               label: 'Marquee',
-              name: 'header',
+              name: 'marquee',
               widget: 'object',
               fields: [
                 {
@@ -41,6 +41,12 @@ export default {
                   name: 'title',
                   widget: 'string',
                   required: true,
+                },
+                {
+                  label: 'Subtitle',
+                  name: 'subtitle',
+                  widget: 'string',
+                  required: false,
                 },
                 {
                   label: 'Marquee Image',
