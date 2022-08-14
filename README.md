@@ -18,6 +18,10 @@ To run the app, run `npm run dev`, to run the local netlify cms run `npx netlify
 
 Pages are created with the netlify cms admin backend which builds out markdown files (`.md`) specified in our config.js file.
 
+## Browser compatibility
+
+===
+
 # Next.js Toolbox Template
 
 ![next-on-netlify](https://user-images.githubusercontent.com/3611928/156433088-21a7cdf6-760c-4758-a3b7-9073bac5e452.png)
