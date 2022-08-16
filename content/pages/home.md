@@ -9,9 +9,11 @@ builder:
       - type: button
         title: Test
         link: test
+        btntitle: button test book
       - type: button
         title: test2
         link: test2
+        btntitle: button two
     buttonTitle: test
     buttontitle: Book Appointment
   - type: cta
