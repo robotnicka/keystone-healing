@@ -1,6 +1,7 @@
 import styles from './Marquee.module.scss';
 import { Logo } from './Logo';
 import { Button } from '@components/Button';
+import Link from 'next/link';
 
 export function Marquee({ item }) {
   return (
@@ -12,9 +13,10 @@ export function Marquee({ item }) {
         <h1>{item.title}</h1>
         <h2>{item.subtitle}</h2>
         {console.log(item.buttontitle)}
-        <div>
-          <Button>{item.buttontitle}</Button>
-          <Button design="secondary">Contact Us</Button>
+        <div className={styles.buttonContainer}>
+          {item.buttons.map((button) => (
+            <Button pointTo={button.link}>{button.btntitle}</Button>
+          ))}
         </div>
       </div>
       <div className={styles.MarqueeImage}>
