@@ -12,6 +12,7 @@ builder:
       - type: button
         title: test2
         link: test2
+    buttonTitle: test
   - type: cta
     title: Book Appointment
     link: "#"
