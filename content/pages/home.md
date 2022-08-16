@@ -13,7 +13,7 @@ builder:
         title: test2
         link: test2
     buttonTitle: test
-    buttontitle: test
+    buttontitle: Book Appointment
   - type: cta
     title: Book Appointment
     link: "#"
