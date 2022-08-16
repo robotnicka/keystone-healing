@@ -55,6 +55,31 @@ export default {
                   required: true,
                   media_library: { config: { multiple: false } },
                 },
+                {
+                  label: 'Buttons',
+                  name: 'buttons',
+                  widget: 'list',
+                  types: [
+                    {
+                      label: 'Button',
+                      name: 'button',
+                      widget: 'object',
+                      fields: [
+                        {
+                          label: 'Title',
+                          name: 'title',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Link',
+                          name: 'link',
+                          widget: 'string',
+                        },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -84,6 +109,25 @@ export default {
                   name: 'Content',
                   widget: 'markdown',
                   required: true,
+                },
+              ],
+            },
+            {
+              label: 'testimonials',
+              name: 'testimonials',
+              widget: 'list',
+              summary: '{{fields.quote}} - {{fields.author.name}}',
+              fields: [
+                {
+                  label: 'Quote',
+                  name: 'quote',
+                  widget: 'string',
+                },
+                {
+                  label: 'Author',
+                  name: 'author',
+                  widget: 'object',
+                  fields: [{ label: 'Name', name: 'name', widget: 'string' }],
                 },
               ],
             },

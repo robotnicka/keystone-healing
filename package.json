@@ -2,6 +2,9 @@
   "name": "keystone-healing",
   "version": "1.0.0",
   "author": "Emily Terranova",
+  "engines": {
+    "node": "16.16.0"
+  },
   "contributors": [
     "Emily Terranova"
   ],
@@ -11,6 +14,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "dev-proxy": "next dev && npx netlify dev",
     "build": "next build",
     "export": "next export"
   },
