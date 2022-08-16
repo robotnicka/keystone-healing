@@ -8,12 +8,12 @@ builder:
     buttons:
       - type: button
         title: Test
-        link: test
-        btntitle: button test book
+        link: "#"
+        btntitle: Book Appointment
       - type: button
         title: test2
-        link: test2
-        btntitle: button two
+        link: /contact
+        btntitle: Contact Us
     buttonTitle: test
     buttontitle: Book Appointment
   - type: cta
