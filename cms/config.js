@@ -56,29 +56,10 @@ export default {
                   media_library: { config: { multiple: false } },
                 },
                 {
-                  label: 'Buttons',
-                  name: 'buttons',
-                  widget: 'list',
-                  types: [
-                    {
-                      label: 'Button',
-                      name: 'button',
-                      widget: 'object',
-                      fields: [
-                        {
-                          label: 'Title',
-                          name: 'title',
-                          widget: 'string',
-                          required: true,
-                        },
-                        {
-                          label: 'Link',
-                          name: 'link',
-                          widget: 'string',
-                        },
-                      ],
-                    },
-                  ],
+                  label: 'Button Title',
+                  name: 'buttontitle',
+                  widget: 'string',
+                  required: false,
                 },
               ],
             },

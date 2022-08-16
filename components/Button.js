@@ -1,9 +1,9 @@
 import styles from './Button.module.scss';
 var classNames = require('classnames');
 
-export const Button = ({ children, type = 'primary' }) => {
+export const Button = ({ children, design = 'primary' }) => {
   let buttonType =
-    type === 'secondary'
+    design === 'secondary'
       ? classNames(styles.button, styles.secondary)
       : classNames(styles.button, styles.primary);
 

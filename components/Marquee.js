@@ -11,9 +11,10 @@ export function Marquee({ item }) {
         </span>
         <h1>{item.title}</h1>
         <h2>{item.subtitle}</h2>
+        {console.log(item.buttontitle)}
         <div>
-          <Button>Book Appointment</Button>
-          <Button type="secondary">Contact Us</Button>
+          <Button>{item.buttontitle}</Button>
+          <Button design="secondary">Contact Us</Button>
         </div>
       </div>
       <div className={styles.MarqueeImage}>
