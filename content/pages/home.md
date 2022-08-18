@@ -19,6 +19,9 @@ builder:
   - type: cta
     title: Book Appointment
     link: "#"
+  - type: contactform
+    Title: How can we help you?
+    Content: If you are in need of immediate service please call us at (919) 896-8715.
   - type: content
     Content: This is the page content.
 ---
