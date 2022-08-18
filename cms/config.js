@@ -106,6 +106,25 @@ export default {
                 },
               ],
             },
+
+            {
+              label: 'Contact Form',
+              name: 'contactform',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'Title',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  name: 'Content',
+                  widget: 'markdown',
+                  required: true,
+                },
+              ],
+            },
             {
               label: 'Content',
               name: 'content',

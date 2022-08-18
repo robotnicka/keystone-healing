@@ -1,5 +1,4 @@
 import { Content } from '@components/Content';
-import FeedbackForm from '@components/FeedbackForm';
 import Layout from '@components/Layout';
 
 import fs from 'fs';
@@ -25,8 +24,6 @@ export default function Home({ children, home }) {
         <li>Favicon</li>
         <li>Analytics</li>
       </ul>
-      <FeedbackForm />
-
       <Content>Main text.</Content>
     </Layout>
   );

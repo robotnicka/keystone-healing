@@ -1,5 +1,4 @@
 import { Content } from '@components/Content';
-import FeedbackForm from '@components/FeedbackForm';
 import Header from '@components/Header';
 import Layout from '@components/Layout';
 
