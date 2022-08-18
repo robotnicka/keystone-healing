@@ -22,6 +22,8 @@ builder:
   - type: contactform
     Title: How can we help you?
     Content: If you are in need of immediate service please call us at (919) 896-8715.
+    title: How can we help you?
+    content: If you are in need of immediate assistance...
   - type: content
     Content: This is the page content.
 ---
