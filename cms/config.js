@@ -114,12 +114,13 @@ export default {
               fields: [
                 {
                   label: 'Title',
-                  name: 'Title',
+                  name: 'title',
                   widget: 'string',
                   required: true,
                 },
                 {
-                  name: 'Content',
+                  label: 'Content',
+                  name: 'content',
                   widget: 'markdown',
                   required: true,
                 },

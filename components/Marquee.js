@@ -14,16 +14,13 @@ export function Marquee({ item }) {
         <h2>{item.subtitle}</h2>
         <div className={styles.buttonContainer}>
           {item.buttons.map((button, index) => (
-            <>
-              {console.log(index)}
-              <Button
-                pointTo={button.link}
-                key={index}
-                design={index == 0 ? 'primary' : 'secondary'}
-              >
-                {button.btntitle}
-              </Button>
-            </>
+            <Button
+              pointTo={button.link}
+              key={index}
+              design={index == 0 ? 'primary' : 'secondary'}
+            >
+              {button.btntitle}
+            </Button>
           ))}
         </div>
       </div>
