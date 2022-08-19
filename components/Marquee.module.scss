@@ -9,10 +9,7 @@
   );
   padding-right: 20px;
   padding-left: 20px;
-
-  @include media(tablet-landscape) {
-    display: flex;
-  }
+  padding-bottom: 50px;
 }
 
 .Logo {
@@ -21,9 +18,52 @@
   height: 125px;
 }
 
+.buttonContainerMobile {
+  text-align: center;
+  @include media(tablet-landscape) {
+    display: none;
+  }
+
+  a {
+    width: 100%;
+    max-width: 275px;
+    display: block;
+    margin: 10px auto;
+
+    + a {
+      @include media(tablet-landscape) {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.buttonContainerDesktop {
+  display: none;
+
+  @include media(tablet-landscape) {
+    display: block;
+  }
+}
+
 .MarqueeImage,
 .MarqueeContent {
   @include media(tablet-landscape) {
     width: 50%;
+  }
+}
+
+.iconSet {
+  text-align: center;
+
+  @include media(tablet-landscape) {
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+.MarqueeMain {
+  @include media(tablet-landscape) {
+    display: flex;
   }
 }

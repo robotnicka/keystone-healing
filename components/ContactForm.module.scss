@@ -4,11 +4,13 @@
   width: 45%;
 }
 
-.form-field {
+.formField {
   font-size: inherit;
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
+  border: 2px solid teal;
+  border-radius: 3px;
 }
 
 .button {

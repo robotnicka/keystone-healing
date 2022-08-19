@@ -11,10 +11,6 @@
   transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
   text-decoration: none;
   height: 58px;
-
-  + .button {
-    margin-left: 20px;
-  }
 }
 
 .primary {
