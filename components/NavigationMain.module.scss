@@ -8,17 +8,22 @@
   text-transform: uppercase;
 
   ul {
-    display: none;
     margin-top: 0;
     margin-bottom: 0;
+    list-style: none;
 
     @include media(tablet-landscape) {
       display: flex;
-      list-style: none;
     }
   }
 
   li {
+    @include media(tablet-landscape) {
+      width: 100%;
+      display: inline-block;
+      text-shadow: #fff 1px 0 6px;
+    }
+
     + li {
       margin-left: 20px;
     }

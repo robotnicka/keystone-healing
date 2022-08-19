@@ -1,7 +1,14 @@
+@use '../assets/variables/breakpoints.scss' as *;
+
 .nav {
+  display: none;
   padding-left: 25px;
   padding-right: 25px;
   font-size: 14px;
+
+  @include media(tablet-landscape) {
+    display: block;
+  }
 
   ul {
     display: flex;

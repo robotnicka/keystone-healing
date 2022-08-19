@@ -29,12 +29,6 @@
     max-width: 275px;
     display: block;
     margin: 10px auto;
-
-    + a {
-      @include media(tablet-landscape) {
-        margin-left: 20px;
-      }
-    }
   }
 }
 
@@ -43,6 +37,14 @@
 
   @include media(tablet-landscape) {
     display: block;
+  }
+
+  a {
+    + a {
+      @include media(tablet-landscape) {
+        margin-left: 20px;
+      }
+    }
   }
 }
 

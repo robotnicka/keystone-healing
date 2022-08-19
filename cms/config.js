@@ -80,12 +80,6 @@ export default {
                     },
                   ],
                 },
-                {
-                  label: 'Button Title',
-                  name: 'buttontitle',
-                  widget: 'string',
-                  required: false,
-                },
               ],
             },
             {

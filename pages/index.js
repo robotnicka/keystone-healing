@@ -24,7 +24,6 @@ export default function Home({ children, home }) {
         <li>Favicon</li>
         <li>Analytics</li>
       </ul>
-      <Content>Main text.</Content>
     </Layout>
   );
 }

@@ -2,7 +2,7 @@ import styles from './ContactForm.module.scss';
 
 export function ContactForm({ item }) {
   return (
-    <>
+    <section className={styles.container}>
       <div>
         <img src={item.photo} alt="" />
       </div>
@@ -55,6 +55,6 @@ export function ContactForm({ item }) {
           </button>
         </form>
       </div>
-    </>
+    </section>
   );
 }
