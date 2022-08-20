@@ -1,6 +1,4 @@
-import { Content } from '@components/Content';
 import Layout from '@components/Layout';
-
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';

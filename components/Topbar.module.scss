@@ -33,3 +33,15 @@
     display: block;
   }
 }
+
+.closedMenu {
+  display: none;
+
+  @include media(tablet-landscape) {
+    display: block;
+  }
+}
+
+.openMenu {
+  display: block;
+}

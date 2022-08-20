@@ -15,7 +15,7 @@ export default function Topbar() {
         <button onClick={toggleOpen}> =</button>{' '}
         <span className={styles.phone}>phoneicon</span>
       </div>
-      <div style={{ display: isOpen ? 'block' : 'none' }}>
+      <div className={isOpen ? styles.openMenu : styles.closedMenu}>
         <NavigationMain />
       </div>
       <NavigationSecondary />
