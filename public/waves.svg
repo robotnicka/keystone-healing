@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1442 262"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Artboard1" x="0" y="0" width="1441.38" height="261.447" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect x="0" y="0" width="1441.38" height="261.447"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <path id="Rectangle" d="M-2.022,57.859C141.076,36.563 358.416,40.281 649.995,69.013C900.319,93.679 1000.9,79.191 1294.2,35.427C1326.43,30.618 1375.36,22.476 1440.98,11L1440.98,267L-2.022,267L-2.022,57.859Z" style="fill:url(#_Linear2);"/>
+        <path id="Path" d="M-3.022,-1C264.986,36.287 498.23,50.522 696.709,41.705C994.427,28.48 1436.59,-29.736 1457.87,18.934C1458.3,28.48 1458.36,110.356 1439.52,108.983C1134.68,86.773 1013.52,108.885 614.744,108.983C479.241,109.016 273.319,96.693 -3.022,72.014L-3.022,-1Z" style="fill:url(#_Linear3);"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1443,1.76717e-13,-1.76717e-13,-1443,1440.98,139)"><stop offset="0" style="stop-color:rgb(0,138,199);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,82,149);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1459.2,0,0,1459.2,-3.02239,54)"><stop offset="0" style="stop-color:rgb(0,128,189);stop-opacity:0.2"/><stop offset="0" style="stop-color:rgb(0,128,189);stop-opacity:0.2"/><stop offset="1" style="stop-color:rgb(216,216,216);stop-opacity:0.51"/></linearGradient>
+    </defs>
+</svg>

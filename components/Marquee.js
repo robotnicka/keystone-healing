@@ -58,10 +58,15 @@ export function Marquee({ item }) {
           ))}
         </div>
       </div>
-      <div className={styles.iconSet}>
-        <div>Icon</div>
-        <div>Icon</div>
-        <div>Icon</div>
+      <div className={styles.promises}>
+        <div className={styles.iconSet}>
+          <div>Icon</div>
+          <div>Icon</div>
+          <div>Icon</div>
+        </div>
+        <div className={styles.waves}>
+          <img src="/waves.svg" />
+        </div>
       </div>
     </section>
   );
