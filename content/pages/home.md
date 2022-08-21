@@ -8,15 +8,12 @@ builder:
     buttons:
       - type: button
         title: Test
-        link: '#'
+        link: "#"
         btntitle: Book Appointment
       - type: button
         title: test2
         link: /contact
         btntitle: Contact Us
-  - type: cta
-    title: Book Appointment
-    link: '#'
   - type: contactform
     Title: How can we help you?
     Content: If you are in need of immediate service please call us at (919) 896-8715.
