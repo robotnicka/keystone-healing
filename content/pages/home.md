@@ -29,7 +29,7 @@ builder:
     paragraph3: We promise to take the time to listen and work with you to find a
       sustainable path to increased wellness.
     link 1: /about
-    link2: ""
+    link2: /services
     title1: Who we are
     link3: /contact
     title2: What we do
