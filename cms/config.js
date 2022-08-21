@@ -119,7 +119,7 @@ export default {
                 },
                 {
                   label: 'Link 1',
-                  name: 'link 1',
+                  name: 'link1',
                   widget: 'string',
                   required: false,
                 },
