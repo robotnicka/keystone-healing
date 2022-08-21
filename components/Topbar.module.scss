@@ -6,11 +6,12 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: colors.$acqua-transparent;
+  background-color: rgba(colors.$background, 0.75);
   padding-top: 6px;
   padding-bottom: 6px;
   backdrop-filter: blur(10px);
   height: 53px;
+  z-index: 10;
 
   @include media(tablet-landscape) {
     display: flex;

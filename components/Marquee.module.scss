@@ -71,6 +71,11 @@
   @include media(tablet-landscape) {
     justify-content: space-between;
     display: flex;
+    color: colors.$background;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 
@@ -88,9 +93,16 @@
     width: 300%;
     height: 500px;
     object-fit: cover;
+
+    @include media(tablet-landscape) {
+      height: 270px;
+      width: 100%;
+    }
   }
 }
 
 .promises {
   position: relative;
+  display: flex;
+  align-items: center;
 }
