@@ -10,16 +10,22 @@
   padding-top: 6px;
   padding-bottom: 6px;
   backdrop-filter: blur(10px);
+  height: 53px;
 
   @include media(tablet-landscape) {
     display: flex;
+    height: 38px;
   }
 }
 
 .mobileMenu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
+  height: 100%;
 
   @include media(tablet-landscape) {
     display: none;
@@ -44,6 +50,17 @@
 
 .openMenu {
   display: block;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: colors.$background;
+  background-color: colors.$keystone;
+  padding: 6px 26px 6px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .phone {

@@ -1,3 +1,4 @@
+import siteMetadata from 'assets/data/siteMetadata';
 import { useState } from 'react';
 import NavigationMain from './NavigationMain';
 import NavigationSecondary from './NavigationSecondary';
@@ -12,10 +13,12 @@ export default function Topbar() {
   return (
     <div className={styles.topbar}>
       <div className={styles.mobileMenu}>
-        <button onClick={toggleOpen}> =</button>{' '}
-        <span className={styles.phone}>
+        <button onClick={toggleOpen} className={styles.button}>
+          Menu
+        </button>
+        <a className={styles.phone} href={`tel:${siteMetadata.phoneNumber}`}>
           <img src="/phone.svg" />
-        </span>
+        </a>
       </div>
       <div className={isOpen ? styles.openMenu : styles.closedMenu}>
         <NavigationMain />
