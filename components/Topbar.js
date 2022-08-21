@@ -13,7 +13,9 @@ export default function Topbar() {
     <div className={styles.topbar}>
       <div className={styles.mobileMenu}>
         <button onClick={toggleOpen}> =</button>{' '}
-        <span className={styles.phone}>phoneicon</span>
+        <span className={styles.phone}>
+          <img src="/phone.svg" />
+        </span>
       </div>
       <div className={isOpen ? styles.openMenu : styles.closedMenu}>
         <NavigationMain />
