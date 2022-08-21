@@ -4,17 +4,17 @@ export function Panels({ item }) {
       <article>
         <h3>{item.title1}</h3>
         <p>{item.paragraph1}</p>
-        <a href={`${item.link1}`}>Read more</a>
+        {item.link1 && <a href={item.link1}>{item.link1}</a>}
       </article>
       <article>
         <h3>{item.title2}</h3>
         <p>{item.paragraph2}</p>
-        <a href={`${item.link2}`}>Read more</a>
+        {item.link2 && <a href={item.link2}>{item.link2}</a>}
       </article>
       <article>
         <h3>{item.title3}</h3>
         <p>{item.paragraph3}</p>
-        <a href={`${item.link3}`}>Read more</a>
+        {item.link3 && <a href={item.link3}>{item.link3}</a>}
       </article>
     </section>
   );
