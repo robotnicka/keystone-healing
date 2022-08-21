@@ -100,7 +100,67 @@ export default {
                 },
               ],
             },
-
+            {
+              label: 'Panels',
+              name: 'panels',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Title 1',
+                  name: 'title1',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Paragraph 1',
+                  name: 'paragraph1',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Link 1',
+                  name: 'link 1',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Title 2',
+                  name: 'title2',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Paragraph 2',
+                  name: 'paragraph2',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Link 2',
+                  name: 'link2',
+                  widget: 'string',
+                  required: false,
+                },
+                {
+                  label: 'Title 3',
+                  name: 'title3',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Paragraph 3',
+                  name: 'paragraph3',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Link 3',
+                  name: 'link3',
+                  widget: 'string',
+                  required: false,
+                },
+              ],
+            },
             {
               label: 'Contact Form',
               name: 'contactform',
