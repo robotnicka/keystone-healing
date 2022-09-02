@@ -60,9 +60,15 @@ export function Marquee({ item }) {
       </div>
       <div className={styles.promises}>
         <div className={styles.iconSet}>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
+          <div>
+            <span></span>Icon
+          </div>
+          <div>
+            <span></span>Icon
+          </div>
+          <div>
+            <span></span>Icon
+          </div>
         </div>
         <div className={styles.waves}>
           <img src="/waves.svg" />
