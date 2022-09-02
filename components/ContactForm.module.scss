@@ -1,7 +1,15 @@
+@use '../assets/variables/colors.scss';
+
 .form {
-  margin: 40px 40px;
-  min-width: 300px;
-  width: 45%;
+  margin: 35px 0;
+  max-width: 450px;
+
+  input,
+  textarea {
+    &:focus {
+      border-color: colors.$keystone;
+    }
+  }
 }
 
 .formField {
@@ -9,19 +17,20 @@
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
-  border: 2px solid teal;
-  border-radius: 3px;
+  border: 2px solid colors.$acqua;
+  border-radius: 5px;
 }
 
 .button {
-  background-color: teal;
-  border: 1px solid black;
+  background-color: colors.$keystone;
+  border: 0;
   color: white;
   width: 50%;
   font-size: inherit;
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
+  border-radius: 30px;
 }
 
 .hidden {

@@ -1,6 +1,8 @@
+import styles from './Panels.module.scss';
+
 export function Panels({ item }) {
   return (
-    <section>
+    <section className={styles.container}>
       <article>
         <h3>{item.title1}</h3>
         <p>{item.paragraph1}</p>

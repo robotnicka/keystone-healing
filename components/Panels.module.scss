@@ -1,0 +1,37 @@
+@use '../assets/variables/breakpoints.scss' as *;
+@use '../assets/variables/colors.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(tablet-landscape) {
+    flex-direction: row;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 40px 40px;
+    background-color: colors.$acqua;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: auto;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
+      margin-bottom: 22px;
+    }
+  }
+}
