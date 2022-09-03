@@ -1,27 +1,38 @@
 import styles from './Marquee.module.scss';
 import { Logo } from './Logo';
 import { Button } from '@components/Button';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Marquee({ item }) {
-  let isMobile = true;
-  if (window.innerWidth < 1024) {
-    isMobile = true;
-  } else {
-    isMobile = false;
-  }
+  let mobileDimension = 1024;
+  const [isMobile, setIsMobile] = useState(false);
 
-  React.useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth < 1024) {
-        isMobile = true;
-      } else {
-        isMobile = false;
-      }
-      console.log(isMobile);
+  useEffect(() => {
+    if (window.innerWidth > mobileDimension) {
+      setIsMobile(false);
+    } else if (window.innerWidth < mobileDimension) {
+      setIsMobile(true);
     }
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > mobileDimension) {
+        setIsMobile(false);
+      } else if (window.innerWidth < mobileDimension) {
+        setIsMobile(true);
+      }
+    };
+
+    console.log(isMobile);
+
     window.addEventListener('resize', handleResize);
-  });
+
+    return () => {
+      console.log(isMobile);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <section className={styles.Marquee}>
@@ -33,8 +44,6 @@ export function Marquee({ item }) {
           <h1>{item.title}</h1>
           <p>{item.subtitle}</p>
           {!isMobile ? (
-            ''
-          ) : (
             <div
               className={`${styles.buttonContainer} ${styles.buttonContainerDesktop}`}
             >
@@ -48,6 +57,8 @@ export function Marquee({ item }) {
                 </Button>
               ))}
             </div>
+          ) : (
+            ''
           )}
         </div>
         <div className={styles.MarqueeImage}>
@@ -70,7 +81,7 @@ export function Marquee({ item }) {
         </div>
         {isMobile ? (
           <div
-            className={`${styles.buttonContainer} ${styles.buttonContainerDesktop}`}
+            className={`${styles.buttonContainer} ${styles.buttonContainerMobile}`}
           >
             {item.buttons.map((button, index) => (
               <Button
