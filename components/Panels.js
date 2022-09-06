@@ -8,7 +8,7 @@ export function Panels({ item }) {
     <section className={styles.container}>
       {[...Array(n)].map((elem, index) => (
         <article>
-          <h3>{item.title}</h3>
+          <h3>{item.title1}</h3>
           <p>{item.paragraph1}</p>
           {item.link1 && (
             <a href={item.link1}>

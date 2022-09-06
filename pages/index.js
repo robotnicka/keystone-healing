@@ -18,7 +18,6 @@ export default function Home({ children, home }) {
         <li>wysiwyg styles</li>
         <li>Form set up</li>
         <li>Caching</li>
-        <li>viewport set up</li>
         <li>Favicon</li>
         <li>Analytics</li>
       </ul>
