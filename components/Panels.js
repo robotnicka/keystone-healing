@@ -11,8 +11,11 @@ export function Panels({ item }) {
           <h3>{item.title1}</h3>
           <p>{item.paragraph1}</p>
           {item.link1 && (
-            <a href={item.link1}>
-              Read more <Arrow />
+            <a className={styles.link} href={item.link1}>
+              Read more{' '}
+              <span className={styles.icon}>
+                <Arrow />
+              </span>
             </a>
           )}
         </article>
