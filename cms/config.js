@@ -59,6 +59,7 @@ export default {
                   label: 'Buttons',
                   name: 'buttons',
                   widget: 'list',
+                  max: 2,
                   types: [
                     {
                       label: 'Button',
@@ -80,13 +81,36 @@ export default {
                     },
                   ],
                 },
+              ],
+            },
+            {
+              label: 'Call To Action',
+              name: 'cta',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Link',
+                  name: 'link',
+                  widget: 'string',
+                },
+              ],
+            },
+            {
+              label: 'Panels',
+              name: 'panels',
+              widget: 'object',
+              fields: [
                 {
                   label: 'Panels',
                   name: 'panels',
                   widget: 'list',
                   max: 3,
-                  min: 1,
-                  allow_add: true,
                   types: [
                     {
                       label: 'Panel',
@@ -117,25 +141,6 @@ export default {
                 },
               ],
             },
-            {
-              label: 'Call To Action',
-              name: 'cta',
-              widget: 'object',
-              fields: [
-                {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  required: true,
-                },
-                {
-                  label: 'Link',
-                  name: 'link',
-                  widget: 'string',
-                },
-              ],
-            },
-
             {
               label: 'Contact Form',
               name: 'contactform',
