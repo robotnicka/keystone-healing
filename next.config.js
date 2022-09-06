@@ -1,12 +1,16 @@
-const path = require('path');
-const withSass = require('sass');
 module.exports = {
-  webpack: (cfg) => {
-    cfg.module.rules.push({
+  webpack: (config) => {
+    config.module.rules.push({
       test: /\.md$/,
       loader: 'frontmatter-markdown-loader',
       options: { mode: ['react-component'] },
     });
-    return cfg;
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
   },
 };
