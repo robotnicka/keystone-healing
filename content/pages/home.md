@@ -29,6 +29,22 @@ builder:
     paragraph3: We promise to take the time to listen and work with you to find a
       sustainable path to increased wellness.
     link 1: /about
+    panels:
+      - type: panel
+        title: Who we are
+        paragraph: At Keystone Healing Arts Center, our driving purpose is to give you
+          the opportunity to live the healthiest life possible.
+        link: /about
+      - type: panel
+        title: What we do
+        link: /services
+        paragraph: Chiropractic at Keystone Healing Arts Center is about so much more
+          than low back pain, neck pain, and headaches.
+      - type: panel
+        title: Why choose us
+        paragraph: We promise to take the time to listen and work with you to find a
+          sustainable path to increased wellness.
+        link: /contact
     link1: /about
     link2: /services
     title1: Who we are
