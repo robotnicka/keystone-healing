@@ -80,6 +80,41 @@ export default {
                     },
                   ],
                 },
+                {
+                  label: 'Panels',
+                  name: 'panels',
+                  widget: 'list',
+                  max: 3,
+                  min: 1,
+                  allow_add: true,
+                  types: [
+                    {
+                      label: 'Panel',
+                      name: 'panel',
+                      widget: 'object',
+                      fields: [
+                        {
+                          label: 'Title',
+                          name: 'title',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Paragraph',
+                          name: 'paragraph',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Link',
+                          name: 'link',
+                          widget: 'string',
+                          required: false,
+                        },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
             {
@@ -100,34 +135,7 @@ export default {
                 },
               ],
             },
-            {
-              label: 'Panels',
-              name: 'panels',
-              widget: 'list',
-              max: 3,
-              min: 1,
-              allow_add: true,
-              fields: [
-                {
-                  label: 'Title',
-                  name: 'title',
-                  widget: 'string',
-                  required: true,
-                },
-                {
-                  label: 'Paragraph',
-                  name: 'paragraph',
-                  widget: 'string',
-                  required: true,
-                },
-                {
-                  label: 'Link',
-                  name: 'link',
-                  widget: 'string',
-                  required: false,
-                },
-              ],
-            },
+
             {
               label: 'Contact Form',
               name: 'contactform',
