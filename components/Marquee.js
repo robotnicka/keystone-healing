@@ -3,6 +3,9 @@ import { Logo } from './Logo';
 import { Button } from '@components/Button';
 import { useEffect, useState } from 'react';
 import Waves from '../assets/svg/waves.svg';
+import Star from '../assets/svg/star.svg';
+import Trophy from '../assets/svg/trophy.svg';
+import Natural from '../assets/svg/natural.svg';
 
 export function Marquee({ item }) {
   let mobileDimension = 1024;
@@ -43,7 +46,7 @@ export function Marquee({ item }) {
             <Logo />
           </span>
           <h1>{item.title}</h1>
-          <p>{item.subtitle}</p>
+          <p className={styles.subtitle}>{item.subtitle}</p>
           {!isMobile ? (
             <div
               className={`${styles.buttonContainer} ${styles.buttonContainerDesktop}`}
@@ -100,15 +103,24 @@ export function Marquee({ item }) {
       </div>
       <div className={styles.promises}>
         <div className={styles.iconSet}>
-          <div>
-            <span></span>Icon
-          </div>
-          <div>
-            <span></span>Icon
-          </div>
-          <div>
-            <span></span>Icon
-          </div>
+          <section>
+            <div className={styles.icon}>
+              <Trophy />
+            </div>
+            <p>Top Chiropractor in the Raleigh Triangle</p>
+          </section>
+          <section>
+            <div className={styles.icon}>
+              <Natural />
+            </div>
+            <p>Get back pain relief without drugs or surgery</p>
+          </section>
+          <section>
+            <div className={styles.icon}>
+              <Star />
+            </div>
+            <p>Eliminating your pain is our top priority</p>
+          </section>
         </div>
         <div className={styles.waves}>
           <Waves />
