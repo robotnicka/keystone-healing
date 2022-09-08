@@ -1,5 +1,6 @@
 import { Marquee } from './Marquee.js';
-import { ContactForm } from './ContactForm.js';
+import { Contact } from './Contact.js';
+import { Panels } from './Panels.js';
 
 function Content({ item }) {
   return <div>{item.content}</div>;
@@ -12,7 +13,8 @@ function Cta({ item }) {
 const components = {
   marquee: Marquee,
   content: Content,
-  contactform: ContactForm,
+  contactform: Contact,
+  panels: Panels,
   cta: Cta,
 };
 

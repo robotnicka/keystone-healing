@@ -18,8 +18,38 @@ builder:
     Title: How can we help you?
     Content: If you are in need of immediate service please call us at (919) 896-8715.
     title: How can we help you?
-    content: If you are in need of immediate assistance...
+    content: If you are in need of immediate service please call us at (919) 896-8715.
     photo: images/rocks.png
   - type: content
     Content: This is the page content.
+  - paragraph1: At Keystone Healing Arts Center, our driving purpose is to give you
+      the opportunity to live the healthiest life possible.
+    paragraph2: Chiropractic at Keystone Healing Arts Center is about so much more
+      than low back pain, neck pain, and headaches.
+    paragraph3: We promise to take the time to listen and work with you to find a
+      sustainable path to increased wellness.
+    link 1: /about
+    panels:
+      - type: panel
+        title: Who we are
+        paragraph: At Keystone Healing Arts Center, our driving purpose is to give you
+          the opportunity to live the healthiest life possible.
+        link: /about
+      - type: panel
+        title: What we do
+        link: /services
+        paragraph: Chiropractic at Keystone Healing Arts Center is about so much more
+          than low back pain, neck pain, and headaches.
+      - type: panel
+        title: Why choose us
+        paragraph: We promise to take the time to listen and work with you to find a
+          sustainable path to increased wellness.
+        link: /contact
+    link1: /about
+    link2: /services
+    title1: Who we are
+    link3: /contact
+    title2: What we do
+    type: panels
+    title3: Why choose us
 ---

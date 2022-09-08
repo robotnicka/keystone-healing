@@ -11,7 +11,6 @@
   padding-top: 70px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 50px;
   text-align: center;
 
   @include media(tablet-landscape) {
@@ -28,10 +27,6 @@
 .buttonContainerMobile {
   text-align: center;
 
-  @include media(tablet-landscape) {
-    display: none;
-  }
-
   a {
     width: 100%;
     max-width: 275px;
@@ -41,12 +36,6 @@
 }
 
 .buttonContainerDesktop {
-  display: none;
-
-  @include media(tablet-landscape) {
-    display: block;
-  }
-
   a {
     + a {
       @include media(tablet-landscape) {
@@ -56,10 +45,20 @@
   }
 }
 
+.buttonContainer {
+  margin-top: 35px;
+}
+
 .MarqueeImage,
 .MarqueeContent {
   @include media(tablet-landscape) {
     width: 50%;
+  }
+}
+
+.MarqueeContent {
+  @include media(tablet-landscape) {
+    padding-right: 50px;
   }
 }
 
@@ -71,6 +70,11 @@
   @include media(tablet-landscape) {
     justify-content: space-between;
     display: flex;
+    color: colors.$background;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 
@@ -88,9 +92,16 @@
     width: 300%;
     height: 500px;
     object-fit: cover;
+
+    @include media(tablet-landscape) {
+      height: 270px;
+      width: 100%;
+    }
   }
 }
 
 .promises {
   position: relative;
+  display: flex;
+  align-items: center;
 }

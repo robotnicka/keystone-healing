@@ -59,6 +59,7 @@ export default {
                   label: 'Buttons',
                   name: 'buttons',
                   widget: 'list',
+                  max: 2,
                   types: [
                     {
                       label: 'Button',
@@ -100,7 +101,46 @@ export default {
                 },
               ],
             },
-
+            {
+              label: 'Panels',
+              name: 'panels',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Panels',
+                  name: 'panels',
+                  widget: 'list',
+                  max: 3,
+                  types: [
+                    {
+                      label: 'Panel',
+                      name: 'panel',
+                      widget: 'object',
+                      fields: [
+                        {
+                          label: 'Title',
+                          name: 'title',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Paragraph',
+                          name: 'paragraph',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Link',
+                          name: 'link',
+                          widget: 'string',
+                          required: false,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
             {
               label: 'Contact Form',
               name: 'contactform',

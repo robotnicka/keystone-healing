@@ -1,8 +1,39 @@
 import styles from './Marquee.module.scss';
 import { Logo } from './Logo';
 import { Button } from '@components/Button';
+import { useEffect, useState } from 'react';
 
 export function Marquee({ item }) {
+  let mobileDimension = 1024;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > mobileDimension) {
+      setIsMobile(false);
+    } else if (window.innerWidth < mobileDimension) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > mobileDimension) {
+        setIsMobile(false);
+      } else if (window.innerWidth < mobileDimension) {
+        setIsMobile(true);
+      }
+    };
+
+    console.log(isMobile);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      console.log(isMobile);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className={styles.Marquee}>
       <div className={styles.MarqueeMain}>
@@ -12,19 +43,23 @@ export function Marquee({ item }) {
           </span>
           <h1>{item.title}</h1>
           <p>{item.subtitle}</p>
-          <div
-            className={`${styles.buttonContainer} ${styles.buttonContainerDesktop}`}
-          >
-            {item.buttons.map((button, index) => (
-              <Button
-                pointTo={button.link}
-                key={index}
-                design={index == 0 ? 'primary' : 'secondary'}
-              >
-                {button.btntitle}
-              </Button>
-            ))}
-          </div>
+          {!isMobile ? (
+            <div
+              className={`${styles.buttonContainer} ${styles.buttonContainerDesktop}`}
+            >
+              {item.buttons.map((button, index) => (
+                <Button
+                  pointTo={button.link}
+                  key={index}
+                  design={index == 0 ? 'primary' : 'secondary'}
+                >
+                  {button.btntitle}
+                </Button>
+              ))}
+            </div>
+          ) : (
+            ''
+          )}
         </div>
         <div className={styles.MarqueeImage}>
           <svg
@@ -44,25 +79,35 @@ export function Marquee({ item }) {
             ></image>
           </svg>
         </div>
-        <div
-          className={`${styles.buttonContainer} ${styles.buttonContainerMobile}`}
-        >
-          {item.buttons.map((button, index) => (
-            <Button
-              pointTo={button.link}
-              key={index}
-              design={index == 0 ? 'primary' : 'secondary'}
-            >
-              {button.btntitle}
-            </Button>
-          ))}
-        </div>
+        {isMobile ? (
+          <div
+            className={`${styles.buttonContainer} ${styles.buttonContainerMobile}`}
+          >
+            {item.buttons.map((button, index) => (
+              <Button
+                pointTo={button.link}
+                key={index}
+                design={index == 0 ? 'primary' : 'secondary'}
+              >
+                {button.btntitle}
+              </Button>
+            ))}
+          </div>
+        ) : (
+          ''
+        )}
       </div>
       <div className={styles.promises}>
         <div className={styles.iconSet}>
-          <div>Icon</div>
-          <div>Icon</div>
-          <div>Icon</div>
+          <div>
+            <span></span>Icon
+          </div>
+          <div>
+            <span></span>Icon
+          </div>
+          <div>
+            <span></span>Icon
+          </div>
         </div>
         <div className={styles.waves}>
           <img src="/waves.svg" />
