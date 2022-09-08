@@ -3,6 +3,7 @@ import { useState } from 'react';
 import NavigationMain from './NavigationMain';
 import NavigationSecondary from './NavigationSecondary';
 import styles from './Topbar.module.scss';
+import Phone from '../assets/svg/phone.svg';
 
 export default function Topbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,9 @@ export default function Topbar() {
           Menu
         </button>
         <a className={styles.phone} href={`tel:${siteMetadata.phoneNumber}`}>
-          <img src="/phone.svg" />
+          <span className={styles.phoneIcon}>
+            <Phone />
+          </span>
         </a>
       </div>
       <div className={isOpen ? styles.openMenu : styles.closedMenu}>

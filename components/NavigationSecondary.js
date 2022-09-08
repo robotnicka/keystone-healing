@@ -1,5 +1,8 @@
 import siteMetadata from 'assets/data/siteMetadata';
 import styles from './NavigationSecondary.module.scss';
+import Phone from '../assets/svg/phone.svg';
+import Calendar from '../assets/svg/calendar.svg';
+import Mail from '../assets/svg/mail.svg';
 
 export default function NavigationSecondary({ props }) {
   return (
@@ -8,7 +11,9 @@ export default function NavigationSecondary({ props }) {
         <li>
           <a href={`tel:${siteMetadata.phoneNumber}`}>
             <span className={styles.phoneIcon}>
-              <img src="/phone.svg" />
+              <span className={styles.phoneIcon}>
+                <Phone />
+              </span>
             </span>
             {siteMetadata.phoneNumber}
           </a>
@@ -16,7 +21,7 @@ export default function NavigationSecondary({ props }) {
         <li>
           <a href="#contact-us">
             <span className={styles.calendarIcon}>
-              <img src="/calendar.svg" />
+              <Calendar />
             </span>
             Request Appointment
           </a>
@@ -24,7 +29,7 @@ export default function NavigationSecondary({ props }) {
         <li>
           <a href="#contact-us">
             <span className={styles.mailIcon}>
-              <img src="/mail.svg" />
+              <Mail />
             </span>
             Contact Us
           </a>

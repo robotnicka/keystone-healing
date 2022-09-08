@@ -1,3 +1,5 @@
+import Keystonelogo from '../assets/svg/keystonelogo.svg';
+
 export const Logo = ({ children }) => {
-  return <img src="/keystonelogo.svg" />;
+  return <Keystonelogo />;
 };

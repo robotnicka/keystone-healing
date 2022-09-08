@@ -1,6 +1,9 @@
 import siteMetadata from 'assets/data/siteMetadata';
 import styles from './Footer.module.scss';
 import NavigationFooter from './NavigationFooter';
+import Keystonelogo from '../assets/svg/keystonelogo.svg';
+import Location from '../assets/svg/location.svg';
+import Phone from '../assets/svg/phone.svg';
 
 export default function Footer() {
   const date = new Date();
@@ -11,21 +14,23 @@ export default function Footer() {
         <div className={styles.footerColumns}>
           <section className={`${styles.column} ${styles.logoColumn}`}>
             <span className={styles.logoContainer}>
-              <img
-                src="/keystonelogo.svg"
-                alt="Keystone Logo"
-                className={styles.logo}
-              />
+              <span className={styles.logo}>
+                <Keystonelogo />
+              </span>
             </span>
           </section>
           <section className={styles.column}>
             <h4>
-              <img src="/location.svg" className={styles.locationIcon} />
+              <span className={styles.locationIcon}>
+                <Location />
+              </span>
               Location
             </h4>
             {siteMetadata.address}
             <h4>
-              <img src="/phone.svg" className={styles.phoneIcon} />
+              <span className={styles.phoneIcon}>
+                <Phone />
+              </span>
               Call Us
             </h4>
             {siteMetadata.phoneNumber}

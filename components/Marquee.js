@@ -2,6 +2,7 @@ import styles from './Marquee.module.scss';
 import { Logo } from './Logo';
 import { Button } from '@components/Button';
 import { useEffect, useState } from 'react';
+import Waves from '../assets/svg/waves.svg';
 
 export function Marquee({ item }) {
   let mobileDimension = 1024;
@@ -110,7 +111,7 @@ export function Marquee({ item }) {
           </div>
         </div>
         <div className={styles.waves}>
-          <img src="/waves.svg" />
+          <Waves />
         </div>
       </div>
     </section>

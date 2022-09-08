@@ -1,5 +1,5 @@
 import styles from './Panels.module.scss';
-import Arrow from './icons/arrow.svg';
+import Arrow from '../assets/svg/arrow.svg';
 
 export function Panels({ item }) {
   return (
