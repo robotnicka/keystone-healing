@@ -173,7 +173,8 @@ export default {
               widget: 'object',
               fields: [
                 {
-                  name: 'Content',
+                  label: 'Content',
+                  name: 'content',
                   widget: 'markdown',
                   required: true,
                 },
