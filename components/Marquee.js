@@ -72,7 +72,7 @@ export function Marquee({ item }) {
             xmlnsXlink="http://www.w3.org/1999/xlink"
           >
             <defs>
-              <title>Marquee image</title>
+              <title>Marquee image mask</title>
               <clipPath id="marquee-shape">
                 <path d="M725.779,220.575C666.707,392.517 521.11,496.962 320.681,462.416C122.125,428.201 0,342.413 0,220.575C0,98.754 162.479,0 362.89,0C563.31,0 790.425,32.444 725.779,220.575" />
               </clipPath>

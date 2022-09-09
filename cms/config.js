@@ -189,6 +189,7 @@ export default {
                   label: 'Quote',
                   name: 'quote',
                   widget: 'string',
+                  required: true,
                 },
                 {
                   label: 'Author',

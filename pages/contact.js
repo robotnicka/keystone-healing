@@ -1,5 +1,5 @@
 import { Content } from '@components/Content';
-import { ContactForm } from '@components/ContactForm';
+import { ContactForm } from '@components/parts/ContactForm';
 import Layout from '@components/Layout';
 
 export default function Contact() {

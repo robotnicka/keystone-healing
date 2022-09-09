@@ -1,5 +1,36 @@
 @use '../assets/variables/colors.scss';
+@use '../assets/variables/breakpoints.scss' as *;
 
 .container {
   display: flex;
+  flex-direction: column;
+  background-color: colors.$acqua-transparent;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 66px;
+  padding-left: 30px;
+
+  @include media(tablet-landscape) {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+}
+
+.ContactImage {
+  width: 100%;
+
+  @include media(tablet-landscape) {
+    width: 50%;
+    padding-right: 35px;
+  }
+
+  @include media(desktop) {
+    padding-right: 135px;
+  }
+}
+
+.FormContainer {
+  max-width: 520px;
 }
