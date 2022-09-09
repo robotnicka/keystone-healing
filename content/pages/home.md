@@ -57,4 +57,9 @@ builder:
 
 
       At Keystone Healing Arts Center, PLLC, our driving purpose is to give you the opportunity to live the healthiest life possible.
+    content: >-
+      ## Keystone Healing Art
+
+
+      At Keystone Healing Arts Center, PLLC, our driving purpose is to give you the opportunity to live the healthiest life possible.
 ---
