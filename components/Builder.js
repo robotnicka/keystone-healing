@@ -1,10 +1,7 @@
 import { Marquee } from './Marquee.js';
 import { Contact } from './Contact.js';
+import { Content } from './Content.js';
 import { Panels } from './Panels.js';
-
-function Content({ item }) {
-  return <div>{item.content}</div>;
-}
 
 function Cta({ item }) {
   return <a href={item.link}>{item.title}</a>;
