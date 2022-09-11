@@ -15,7 +15,6 @@ export default function Home({ children, home }) {
         <li>Add image capabilities / cloudflare cdn?</li>
         <li>Form set up</li>
         <li>Caching</li>
-        <li>Analytics</li>
       </ul>
     </Layout>
   );
