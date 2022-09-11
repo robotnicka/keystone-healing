@@ -51,7 +51,8 @@
     }
 
     p {
-      font-size: clamp(16px, 10vw, 1.5rem);
+      font-size: clamp(1rem, 0.5714rem + 2.381vw, 2rem);
+      margin-bottom: 20px;
 
       @include media(tablet-landscape) {
         font-size: initial;
@@ -60,7 +61,7 @@
 
     h3 {
       margin-bottom: 22px;
-      font-size: clamp(23px, 10vw, 2rem);
+      font-size: clamp(1rem, 0.5714rem + 2.7381vw, 2rem);
 
       @include media(tablet-landscape) {
         font-size: 23px;
