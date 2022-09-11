@@ -20,8 +20,8 @@ export function Contact({ item }) {
         </svg>
       </div>
       <div className={styles.FormContainer}>
-        <h2>{item.title}</h2>
-        <p>{item.content}</p>
+        {item.title && <h2>{item.title}</h2>}
+        {item.content && <p>{item.content}</p>}
         <ContactForm />
       </div>
     </section>

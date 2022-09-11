@@ -1,11 +1,15 @@
-import { Content } from '@components/Content';
-import { ContactForm } from '@components/parts/ContactForm';
 import Layout from '@components/Layout';
+import Builder from '../components/Builder';
+import Header from '@components/Header';
 
-export default function Contact() {
+export default function Contact({ contact }) {
   return (
     <Layout title="Contact Us">
-      <Content></Content>
+      <Header header="Contact Us" />
+      {contact &&
+        contact.builder.map((item, index) => {
+          return <Builder key={index} type={item.type} item={item} />;
+        })}
     </Layout>
   );
 }

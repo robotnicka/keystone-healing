@@ -1,14 +1,15 @@
-import { Content } from '@components/Content';
 import Header from '@components/Header';
 import Layout from '@components/Layout';
+import Builder from '../components/Builder';
 
-export default function Services() {
+export default function Services({ services }) {
   return (
     <Layout title="Services">
-      <Content>
-        <Header header="Services" />
-        <h3>Our services.</h3>
-      </Content>
+      <Header header="Services" />
+      {services &&
+        services.builder.map((item, index) => {
+          return <Builder key={index} type={item.type} item={item} />;
+        })}
     </Layout>
   );
 }
