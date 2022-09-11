@@ -17,8 +17,8 @@ export default function About({ about }) {
 
 export async function getStaticProps() {
   const about = getBySlug('content/pages', 'about');
-  import { getBySlug } from 'pages';
 
+  return {
     props: {
       about,
     },

@@ -19,8 +19,7 @@ export async function getStaticProps() {
   const services = getBySlug('content/pages', 'services');
 
   return {
-    props: {import { getBySlug } from 'pages';
-
+    props: {
       services,
     },
   };
