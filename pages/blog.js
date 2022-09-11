@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { Component } from 'react';
 import { attributes, react as HomeContent } from '../content/home.md';
 
+// This is not currently used, but I'm leaving it here in the chance a blog will be added
+
 export default class Home extends Component {
   render() {
     let { title, cats } = attributes;

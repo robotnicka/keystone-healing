@@ -1,6 +1,7 @@
 import Layout from '@components/Layout';
 import Builder from '../components/Builder';
 import Header from '@components/Header';
+import { getBySlug } from 'pages';
 
 export default function Contact({ contact }) {
   return (
@@ -12,4 +13,14 @@ export default function Contact({ contact }) {
         })}
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const contact = getBySlug('content/pages', 'contact');
+
+  return {
+    props: {
+      contact,
+    },
+  };
 }

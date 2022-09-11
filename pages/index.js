@@ -20,7 +20,7 @@ export default function Home({ children, home }) {
   );
 }
 
-function getBySlug(dir, slug) {
+export function getBySlug(dir, slug) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(dir, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
