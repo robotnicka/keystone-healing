@@ -13,12 +13,8 @@ export default function Home({ children, home }) {
       <ul>
         <li>Add accessibility</li>
         <li>Add image capabilities / cloudflare cdn?</li>
-        <li>Hook up cms</li>
-        <li>Add typescript and typings</li>
-        <li>wysiwyg styles</li>
         <li>Form set up</li>
         <li>Caching</li>
-        <li>Favicon</li>
         <li>Analytics</li>
       </ul>
     </Layout>
