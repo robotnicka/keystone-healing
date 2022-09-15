@@ -94,4 +94,8 @@ builder:
 
 
       * t﻿est
+  - type: testimonials
+    quote: test
+    author:
+      name: test
 ---
