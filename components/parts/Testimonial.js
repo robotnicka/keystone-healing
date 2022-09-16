@@ -1,6 +1,6 @@
 export const Testimonial = ({ item }) => {
   return (
-    <figure>
+    <figure style={styles.Quote}>
       <blockquote>
         <p>{item.quote}</p>
       </blockquote>

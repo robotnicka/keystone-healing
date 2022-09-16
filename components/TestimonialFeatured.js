@@ -5,8 +5,8 @@ export function TestimonialFeatured({ item }) {
   return (
     <section>
       <h3>Testimonials</h3>
-      <figure >
-        <blockquote>
+      <figure className={style.Quote}>
+        <blockquote className={styles.QuoteContainer}>
           <p>{item.quote}</p>
         </blockquote>
         {item.author && <figcaption>— {item.author}</figcaption>}
