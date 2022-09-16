@@ -195,7 +195,7 @@ export default {
               ],
             },
             {
-              label: 'testimonials',
+              label: 'Testimonials',
               name: 'testimonials',
               widget: 'list',
               summary: '{{fields.quote}} - {{fields.author.name}}',
@@ -211,6 +211,24 @@ export default {
                   name: 'author',
                   widget: 'object',
                   fields: [{ label: 'Name', name: 'name', widget: 'string' }],
+                },
+              ],
+            },
+            {
+              label: 'Featured Testimonial',
+              name: 'testimonialsFeatured',
+              widget: 'object',
+              fields: [
+                {
+                  label: 'Quote',
+                  name: 'quote',
+                  widget: 'string',
+                  required: true,
+                },
+                {
+                  label: 'Author',
+                  name: 'author',
+                  widget: 'string',
                 },
               ],
             },

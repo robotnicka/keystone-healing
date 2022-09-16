@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './Button.module.scss';
-var classNames = require('classnames');
+import classNames from 'classnames';
 
 export const Button = ({ children, pointTo, design }) => {
   return (

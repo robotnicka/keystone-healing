@@ -12,7 +12,6 @@ export default function Home({ children, home }) {
       })}
       <ul>
         <li>Add accessibility</li>
-        <li>Add image capabilities / cloudflare cdn?</li>
         <li>Form set up</li>
         <li>Caching</li>
       </ul>
