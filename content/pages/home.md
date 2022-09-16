@@ -99,7 +99,7 @@ builder:
     author:
       name: test
   - type: testimonialsFeatured
-    quote: When I met Dr. Joh, the first thing I said was "Get prepared because I
+    quote: When I met Dr. John, the first thing I said was "Get prepared because I
       ask questions. LOTS of questions!" His response was "That is quite
       alright."
     author: Grace Thompson
