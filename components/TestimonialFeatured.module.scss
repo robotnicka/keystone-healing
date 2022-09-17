@@ -1,0 +1,62 @@
+@use '../assets/variables/colors.scss';
+@use '../assets/variables/breakpoints.scss' as *;
+
+.quote {
+  color: colors.$background;
+  text-align: left;
+
+  p {
+    font-size: 20px;
+    font-style: italic;
+
+    @include media(tablet-landscape) {
+      font-size: 25px;
+    }
+  }
+
+  @include media(tablet-landscape) {
+    margin-left: 138px;
+  }
+}
+
+.quoteContainer {
+  position: relative;
+  background-color: colors.$keystone;
+  margin: 50px 15px;
+  padding: 75px 40px 33px;
+  border-radius: 20px;
+
+  @include media(tablet-landscape) {
+    margin: 50px auto;
+    max-width: 920px;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 33px;
+  left: 28px;
+  width: 125px;
+  height: 87px;
+
+  @include media(tablet-landscape) {
+    width: 178px;
+    height: 124px;
+    left: 49px;
+  }
+}
+
+.header {
+  padding: 0 20px;
+}
+
+.author {
+  color: colors.$background;
+  text-align: right;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
+.testimonialFeatured {
+  text-align: center;
+}
