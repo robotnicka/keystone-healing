@@ -25,9 +25,9 @@
   margin: 50px 15px;
   padding: 75px 40px 33px;
   border-radius: 20px;
+  margin: 45px auto;
 
   @include media(tablet-landscape) {
-    margin: 50px auto;
     max-width: 920px;
   }
 }
@@ -45,8 +45,7 @@
     left: 49px;
   }
 }
-
-.header {
+z .header {
   padding: 0 20px;
 }
 
@@ -59,4 +58,9 @@
 
 .testimonialFeatured {
   text-align: center;
+  margin: 75px auto;
+
+  @include media(tablet-landscape) {
+    margin: 115px auto;
+  }
 }

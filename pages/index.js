@@ -10,11 +10,6 @@ export default function Home({ children, home }) {
       {home.builder.map((item, index) => {
         return <Builder key={index} type={item.type} item={item} />;
       })}
-      <ul>
-        <li>Add accessibility</li>
-        <li>Form set up</li>
-        <li>Caching</li>
-      </ul>
     </Layout>
   );
 }

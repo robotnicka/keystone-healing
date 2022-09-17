@@ -20,6 +20,10 @@
   &:hover {
     color: colors.$background;
   }
+
+  &:visited {
+    color: colors.$text-light;
+  }
 }
 
 .secondary {
