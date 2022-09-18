@@ -25,6 +25,11 @@ export default function Topbar() {
       </div>
       <div className={isOpen ? styles.openMenu : styles.closedMenu}>
         <NavigationMain />
+        {isOpen && (
+          <button onClick={toggleOpen} className={styles.closeButton}>
+            X
+          </button>
+        )}
       </div>
       <NavigationSecondary />
     </div>
