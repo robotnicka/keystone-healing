@@ -13,7 +13,7 @@
   @include media(tablet-landscape) {
     flex-direction: row;
     align-items: center;
-    padding-top: 46px;
+    padding-top: 75px;
     padding-bottom: 48px;
   }
 }
@@ -33,4 +33,17 @@
 
 .FormContainer {
   max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 68px;
+
+  @include media(desktop) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  p {
+    margin-top: 12px;
+    font-size: 16px;
+  }
 }

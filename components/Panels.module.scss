@@ -8,13 +8,14 @@
   padding-right: 15px;
   padding-left: 15px;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 65px auto;
 
   @include media(tablet-landscape) {
     flex-direction: row;
     max-width: 1200px;
     padding-right: 30px;
     padding-left: 30px;
+    margin: 95px auto 115px;
   }
 
   article {

@@ -17,33 +17,44 @@ export function ContactForm() {
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
-
-      <label htmlFor="name">Name</label>
-      <input id="name" className={styles.formField} type="text" name="name" />
-
-      <label htmlFor="email">Email</label>
-      <input
-        id="email"
-        className={styles.formField}
-        type="email"
-        name="email"
-        required
-      />
-
-      <label htmlFor="phone">Phone</label>
-      <input id="phone" className={styles.formField} type="tel" name="phone" />
-
-      <label htmlFor="feedback">Message</label>
-      <textarea
-        id="feedback"
-        className={styles.formField}
-        wrap="soft"
-        name="feedback"
-        required
-      ></textarea>
-      <button className={styles.button} type="submit">
-        Send
-      </button>
+      <div>
+        <label htmlFor="name">Name</label>
+        <input id="name" className={styles.formField} type="text" name="name" />
+      </div>
+      <div>
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          className={styles.formField}
+          type="email"
+          name="email"
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="phone">Phone</label>
+        <input
+          id="phone"
+          className={styles.formField}
+          type="tel"
+          name="phone"
+        />
+      </div>
+      <div>
+        <label htmlFor="feedback">Message</label>
+        <textarea
+          id="feedback"
+          className={styles.formField}
+          wrap="soft"
+          name="feedback"
+          required
+        ></textarea>
+      </div>
+      <div className={styles.buttonContainer}>
+        <button className={styles.button} type="submit">
+          Send
+        </button>
+      </div>
     </form>
   );
 }

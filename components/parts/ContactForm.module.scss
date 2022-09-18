@@ -1,13 +1,45 @@
 @use '../../assets/variables/colors.scss';
+@use '../../assets/variables/breakpoints.scss' as *;
 
 .form {
-  margin: 35px 0;
+  margin: 35px auto;
   max-width: 450px;
+
+  @include media(desktop) {
+    margin: 35px 0;
+  }
 
   input,
   textarea {
     &:focus {
       border-color: colors.$keystone;
+    }
+  }
+
+  label {
+    margin-top: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+
+    @include media(desktop) {
+      width: 90px;
+      display: inline-block;
+    }
+  }
+
+  input,
+  textarea {
+    @include media(desktop) {
+      display: inline-block;
+      width: calc(100% - 110px);
+    }
+  }
+
+  div {
+    @include media(desktop) {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
@@ -22,15 +54,32 @@
 }
 
 .button {
+  display: inline-block;
+  padding: 16px 28px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 29px;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  text-decoration: none;
+  height: 58px;
+  width: 275px;
   background-color: colors.$keystone;
-  border: 0;
-  color: white;
-  width: 50%;
-  font-size: inherit;
-  margin: 15px 0;
-  padding: 12px 20px;
-  width: 100%;
-  border-radius: 30px;
+  color: colors.$text-light;
+  margin-top: 22px;
+
+  &:hover {
+    color: colors.$background;
+  }
+
+  &:visited {
+    color: colors.$text-light;
+  }
+}
+
+.buttonContainer {
+  text-align: center;
 }
 
 .hidden {
