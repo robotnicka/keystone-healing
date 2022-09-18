@@ -61,39 +61,10 @@ builder:
       ## Keystone Healing Arts
 
 
-      > At Keystone Healing Arts Center, PLLC, our driving **pur**pose i*s to give* yo***u the opport***unity to live the healthiest life possible.
+      > At Keystone Healing Arts Center, PLLC, our driving purpose is to give you the opportunity to live the healthiest life possible.
 
 
-      Lord Henry shrugged **his s**houlders. "My ***dear fellow, m***ediaeval art is charming, but mediaeval emotions are out of date. One can use them in fiction, of course. But then the only things that one can use in fiction are the things that one has ceased to use *in fact. Be*lieve me, no civilized man ever regrets a pleasure, and no uncivilized man ever knows what a pleasure is."
-
-
-      t﻿est
-
-
-      "I know what pleasure is," cried Dorian Gray. "It is to adore[ some ](test)one."
-
-
-      "That is certainly better than being adored," he answered, toying with some fruits. "Being adored is a nuisance. Women treat us just as humanity treats its gods. They worship us, and are always bothering us to do something for them."
-
-
-      * T﻿est
-
-      * t﻿est
-
-      * t﻿est
-
-        * T﻿est
-
-        1. t﻿est
-
-      1. t﻿est
-
-      2. t﻿est
-
-      3. t﻿est
-
-
-      * t﻿est
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at ante velit. Quisque vel tincidunt libero. Vestibulum augue nisi, tempor sit amet blandit ultricies, vulputate in purus. Vivamus vitae ex mi. Praesent ut sapien faucibus, rhoncus ex quis, sollicitudin mi. Nunc sed tellus sollicitudin, consequat purus elementum, suscipit tellus. Aenean lectus leo, sollicitudin a orci ac, porta gravida ipsum. Donec lacinia faucibus ornare. In tempus neque non sapien facilisis, nec lobortis dolor placerat. Integer nec dui sit amet felis faucibus vulputate fermentum eget lorem. Aenean luctus enim eu nulla aliquet, at maximus justo imperdiet. Cras id metus blandit ipsum pharetra sollicitudin.
   - type: testimonials
     quote: test
     author:
