@@ -63,7 +63,18 @@
   }
 
   nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 100%;
+  }
+
+  li {
+    + li {
+      margin-top: 40px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -80,8 +91,13 @@
 
 .closeButton {
   position: absolute;
-  width: 40pxl;
-  height: 40px;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+  padding: 0;
 }
 
 .phone {

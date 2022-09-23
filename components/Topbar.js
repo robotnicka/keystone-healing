@@ -4,6 +4,7 @@ import NavigationMain from './NavigationMain';
 import NavigationSecondary from './NavigationSecondary';
 import styles from './Topbar.module.scss';
 import Phone from '../assets/svg/phone.svg';
+import Close from '../assets/svg/close.svg';
 
 export default function Topbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function Topbar() {
         <NavigationMain />
         {isOpen && (
           <button onClick={toggleOpen} className={styles.closeButton}>
-            X
+            <Close />
           </button>
         )}
       </div>
