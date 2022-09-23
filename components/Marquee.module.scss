@@ -28,8 +28,13 @@
 
 .Logo {
   display: inline-block;
-  width: 199px;
-  height: 125px;
+  width: 117px;
+  height: 65px;
+
+  @include media(tablet-landscape) {
+    width: 199px;
+    height: 125px;
+  }
 }
 
 .buttonContainerMobile {
