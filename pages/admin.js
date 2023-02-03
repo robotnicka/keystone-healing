@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import config from '../cms/config';
+import netlifyIdentity from 'netlify-identity-widget';
 
 const CMS = dynamic(
   () =>
