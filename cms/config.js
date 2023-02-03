@@ -197,20 +197,36 @@ export default {
             {
               label: 'Testimonials',
               name: 'testimonials',
-              widget: 'list',
+              widget: 'object',
               summary: '{{fields.quote}} - {{fields.author.name}}',
               fields: [
                 {
-                  label: 'Quote',
-                  name: 'quote',
-                  widget: 'string',
-                  required: true,
-                },
-                {
-                  label: 'Author',
-                  name: 'author',
-                  widget: 'object',
-                  fields: [{ label: 'Name', name: 'name', widget: 'string' }],
+                  label: 'Testimonials',
+                  name: 'testimonials',
+                  widget: 'list',
+                  types: [
+                    {
+                      label: 'Testimonial',
+                      name: 'testimonial',
+                      widget: 'object',
+                      fields: [
+                        {
+                          label: 'Quote',
+                          name: 'quote',
+                          widget: 'string',
+                          required: true,
+                        },
+                        {
+                          label: 'Author',
+                          name: 'author',
+                          widget: 'object',
+                          fields: [
+                            { label: 'Name', name: 'name', widget: 'string' },
+                          ],
+                        }, 
+                      ],
+                    },
+                  ],
                 },
               ],
             },
