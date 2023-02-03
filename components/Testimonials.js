@@ -9,7 +9,7 @@ export function Testimonials({ item }) {
             <p>{testimonial.quote}</p>
           </blockquote>
           {testimonial.author && (
-            <figcaption>— {testimonial.author}</figcaption>
+            <figcaption>— {testimonial.author.name}</figcaption>
           )}
         </figure>
       ))}
