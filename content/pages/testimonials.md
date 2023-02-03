@@ -2,7 +2,7 @@
 title: Testimonials
 builder:
   - type: content
-    content: T﻿est testimonials
+    content: T﻿est testimonials 2
   - type: testimonials
     testimonials:
       - type: testimonial
