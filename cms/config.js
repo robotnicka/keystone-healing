@@ -198,7 +198,6 @@ export default {
               label: 'Testimonials',
               name: 'testimonials',
               widget: 'object',
-              summary: '{{fields.quote}} - {{fields.author.name}}',
               fields: [
                 {
                   label: 'Testimonials',
@@ -223,7 +222,7 @@ export default {
                           fields: [
                             { label: 'Name', name: 'name', widget: 'string' },
                           ],
-                        }, 
+                        },
                       ],
                     },
                   ],
