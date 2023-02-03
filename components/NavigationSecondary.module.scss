@@ -19,6 +19,14 @@
   }
 
   li {
+    @include media(tablet) {
+      font-size: 12px;
+    }
+
+    @include media(desktop) {
+      font-size: 14px;
+    }
+
     + li {
       margin-left: 18px;
 
