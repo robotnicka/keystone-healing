@@ -20,7 +20,11 @@
 
   li {
     + li {
-      margin-left: 48px;
+      margin-left: 18px;
+
+      @include media(desktop) {
+        margin-left: 48px;
+      }
     }
   }
 

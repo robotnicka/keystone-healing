@@ -6,6 +6,7 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  flex-direction: column;
 
   ul {
     margin-top: 0;
@@ -31,5 +32,18 @@
 
   a {
     text-decoration: none;
+  }
+
+  // logo
+  svg {
+    width: 117px;
+    height: 88px;
+    margin-bottom: 100px;
+  }
+}
+
+.logoMobile {
+  @include media(tablet-landscape) {
+    display: none;
   }
 }

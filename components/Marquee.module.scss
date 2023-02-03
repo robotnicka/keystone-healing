@@ -91,7 +91,16 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
+
+    @include media(tablet) {
+      font-size: 16px;
+    }
+  }
+
+  section {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -101,21 +110,30 @@
 
   @include media(tablet-landscape) {
     display: flex;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 
 .waves {
   display: block;
-  width: calc(100% + 40px);
-  margin: 0 -20px;
+  width: 100%;
+  overflow: hidden;
 
   svg {
-    width: 300%;
-    height: 500px;
+    width: 600%;
     object-fit: cover;
+    margin-bottom: -10px;
+
+    @include media(tablet) {
+      width: 400%;
+    }
 
     @include media(tablet-landscape) {
-      height: 270px;
+      width: 200%;
+    }
+
+    @include media(desktop-large) {
       width: 100%;
     }
   }

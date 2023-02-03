@@ -122,9 +122,9 @@ export function Marquee({ item }) {
             <p>Eliminating your pain is our top priority</p>
           </section>
         </div>
-        {/* <div className={styles.waves}>
+        <div className={styles.waves}>
           <Waves />
-        </div> */}
+        </div>
       </div>
     </section>
   );

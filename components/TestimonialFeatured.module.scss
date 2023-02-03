@@ -45,7 +45,8 @@
     left: 49px;
   }
 }
-z .header {
+
+.header {
   padding: 0 20px;
 }
 
@@ -59,6 +60,7 @@ z .header {
 .testimonialFeatured {
   text-align: center;
   margin: 75px auto;
+  padding: 0 30px;
 
   @include media(tablet-landscape) {
     margin: 115px auto;
