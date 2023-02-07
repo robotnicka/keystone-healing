@@ -17,6 +17,9 @@ const AdminPage = () => {
       <Head>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
+      <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+      <div data-netlify-identity-menu></div>
+      <div data-netlify-identity-button>Login with Netlify Identity</div>
       <CMS />
     </>
   );
