@@ -1,7 +1,7 @@
 export default {
   cms_manual_init: true,
   backend: {
-    name: 'git-gateway',
+    name: 'github',
     repo: 'robotnicka/keystone-healing',
     branch: 'main',
   },
