@@ -16,7 +16,11 @@ const AdminPage = () => {
     <>
       <Head>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <link href="cms/config.js" type="text/yaml" rel="cms-config-url"></link>
+        <link
+          href="cms/config.js"
+          type="text/javascript"
+          rel="cms-config-url"
+        ></link>
       </Head>
       <CMS />
     </>
