@@ -1,0 +1,9 @@
+backend:
+  name: git-gateway
+  repo: robotnicka/keystone-healing
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/images
+public_folder: images
+collections:
+  - name: 'Pages'
+    label: 'Page'
