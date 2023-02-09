@@ -3,6 +3,7 @@ import styles from './NavigationSecondary.module.scss';
 import Phone from '../assets/svg/phone.svg';
 import Calendar from '../assets/svg/calendar.svg';
 import Mail from '../assets/svg/mail.svg';
+import Link from 'next/link';
 
 export default function NavigationSecondary({ props }) {
   return (
@@ -19,20 +20,24 @@ export default function NavigationSecondary({ props }) {
           </a>
         </li>
         <li>
-          <a href="#contact-us">
-            <span className={styles.calendarIcon}>
-              <Calendar />
-            </span>
-            Request Appointment
-          </a>
+          <Link href="/#contact-us">
+            <a>
+              <span className={styles.calendarIcon}>
+                <Calendar />
+              </span>
+              Request Appointment
+            </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact-us">
-            <span className={styles.mailIcon}>
-              <Mail />
-            </span>
-            Contact Us
-          </a>
+          <Link href="/#contact-us">
+            <a>
+              <span className={styles.mailIcon}>
+                <Mail />
+              </span>
+              Contact Us
+            </a>
+          </Link>
         </li>
       </ul>
     </nav>
