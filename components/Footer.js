@@ -4,9 +4,11 @@ import NavigationFooter from './NavigationFooter';
 import Keystonelogo from '../assets/svg/keystonelogo.svg';
 import Location from '../assets/svg/location.svg';
 import Phone from '../assets/svg/phone.svg';
+import { attributes, react as FooterContent } from '../data/nav.md';
 
 export default function Footer() {
   const date = new Date();
+  let { NavItems } = attributes;
 
   return (
     <>
@@ -41,6 +43,15 @@ export default function Footer() {
           </section>
           <section className={styles.column}>
             <h4>Hours</h4>
+            <FooterContent />
+            <ul>
+              {NavItems.map((nav, k) => (
+                <li key={k}>
+                  <h2>{nav.url}</h2>
+                  <p>{nav.displayText}</p>
+                </li>
+              ))}
+            </ul>
             <ul>
               <li>Tuesday: 2:00pm - 7:00pm</li>
               <li>Wednesday: 9:00am - 6:00pm </li>

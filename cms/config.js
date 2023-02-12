@@ -10,6 +10,36 @@ export default {
   public_folder: 'images',
   collections: [
     {
+      label: 'sitewide options',
+      name: 'options',
+      editor: { preview: false },
+      options: '',
+      files: [
+        {
+          label: 'Navigation',
+          name: 'nav',
+          file: 'data/nav.md',
+          fields: [
+            {
+              name: 'NavItems',
+              label: 'nav items',
+              label_singular: 'nav item',
+              widget: 'list',
+              fields: [
+                {
+                  label: 'Display Text',
+                  name: 'displayText',
+                  widget: 'string',
+                },
+                { label: 'URL', name: 'url', widget: 'string' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
       name: 'Pages',
       label: 'Page',
       editor: { preview: false },
