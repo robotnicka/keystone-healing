@@ -16,13 +16,13 @@ export default {
       options: '',
       files: [
         {
-          label: 'Navigation',
-          name: 'nav',
+          label: 'Hours',
+          name: 'hours',
           file: 'data/nav.yml',
           fields: [
             {
-              name: 'Open days list',
-              label: 'Open days',
+              name: 'openDays',
+              label: 'Open days list',
               label_singular: 'day',
               widget: 'list',
               fields: [

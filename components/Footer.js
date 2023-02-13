@@ -4,7 +4,7 @@ import NavigationFooter from './NavigationFooter';
 import Keystonelogo from '../assets/svg/keystonelogo.svg';
 import Location from '../assets/svg/location.svg';
 import Phone from '../assets/svg/phone.svg';
-import { NavItems, react as FooterContent } from '../data/nav.yml';
+import { openDays, react as FooterContent } from '../data/nav.yml';
 
 export default function Footer() {
   const date = new Date();
@@ -43,7 +43,7 @@ export default function Footer() {
           <section className={styles.column}>
             <h4>Hours</h4>
             <ul>
-              {NavItems.map((nav, k) => (
+              {openDays.map((nav, k) => (
                 <li key={k}>
                   <span>{nav.day}: </span>
                   <span>{nav.hours}</span>
