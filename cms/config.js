@@ -22,7 +22,7 @@ export default {
           fields: [
             {
               name: 'openDays',
-              label: 'Open days list',
+              label: 'Open days',
               label_singular: 'day',
               widget: 'list',
               fields: [
