@@ -22,7 +22,8 @@
     "cypress": "^10.0.3",
     "gray-matter": "^4.0.3",
     "netlify-identity-widget": "^1.9.2",
-    "next": "^12.1.4"
+    "next": "^12.1.4",
+    "next-yaml": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",

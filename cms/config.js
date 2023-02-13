@@ -10,6 +10,36 @@ export default {
   public_folder: 'images',
   collections: [
     {
+      label: 'sitewide options',
+      name: 'options',
+      editor: { preview: false },
+      options: '',
+      files: [
+        {
+          label: 'Hours',
+          name: 'hours',
+          file: 'data/nav.yml',
+          fields: [
+            {
+              name: 'openDays',
+              label: 'Open days list',
+              label_singular: 'day',
+              widget: 'list',
+              fields: [
+                {
+                  label: 'Day',
+                  name: 'day',
+                  widget: 'string',
+                },
+                { label: 'Hours', name: 'hours', widget: 'string' },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
       name: 'Pages',
       label: 'Page',
       editor: { preview: false },
