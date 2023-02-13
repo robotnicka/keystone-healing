@@ -18,20 +18,20 @@ export default {
         {
           label: 'Navigation',
           name: 'nav',
-          file: 'data/nav.md',
+          file: 'data/nav.yml',
           fields: [
             {
-              name: 'NavItems',
-              label: 'nav items',
-              label_singular: 'nav item',
+              name: 'Open days list',
+              label: 'Open days',
+              label_singular: 'day',
               widget: 'list',
               fields: [
                 {
-                  label: 'Display Text',
-                  name: 'displayText',
+                  label: 'Day',
+                  name: 'day',
                   widget: 'string',
                 },
-                { label: 'URL', name: 'url', widget: 'string' },
+                { label: 'Hours', name: 'hours', widget: 'string' },
               ],
             },
           ],
