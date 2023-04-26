@@ -7,10 +7,6 @@ builder:
     subtitle: Your initial consultation is free!
     buttons:
       - type: button
-        title: Test
-        link: "#"
-        btntitle: Book Appointment
-      - type: button
         title: test2
         link: /contact
         btntitle: Contact Us
