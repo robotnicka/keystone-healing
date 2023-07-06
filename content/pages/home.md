@@ -10,10 +10,6 @@ builder:
         title: test2
         link: /contact
         btntitle: Contact Us
-  - type: contactform
-    title: How can we help you?
-    content: If you are in need of immediate service please call us at (919) 896-8715.
-    photo: images/rocks.png
   - type: panels
     panels:
       - type: panel
