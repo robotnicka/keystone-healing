@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Contact
 builder:
   - type: contactform
     photo: images/rocks.png
