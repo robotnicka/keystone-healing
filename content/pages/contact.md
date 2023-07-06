@@ -2,7 +2,6 @@
 title: Contact
 builder:
   - type: contactform
+    title: Contact us
     photo: images/rocks.png
-    content: C﻿ontact us!
-    title: Contact Us
 ---
