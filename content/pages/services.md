@@ -61,17 +61,11 @@ builder:
 
       The body changes and is stressed during pregnancy. Chiropractic care has been shown to alleviate the aches and pains that go along with pregnancy and may shorten delivery times and decrease the likelihood of complications during delivery. Dr. John has worked with many new moms through their entire pregnancy journey.
   - type: content
-    content: "#﻿# Insurance
+    content: >-
+      ### Insurance
 
 
-      At Keystone Healing Arts, we do not take insurance.  Why, you may
-      ask? We don’t want insurance requirements and payments to get in the way
-      of your care.  When insurance is involved, they dictate your
-      care.  Insurance companies can decide what services you qualify for, how
-      many visits you can have, how far apart those visits can occur, how long a
-      visit can last, and can hold up payments to delay your care even
-      further.  We treat you as a human with human needs, not a statistic.  We
-      want you to have the care you need when you need it.  We keep costs
-      affordable so that we can give you everything you need to get the maximum
-      results for your individualized care.\r\n"
+
+
+      At Keystone Healing Arts, we do not take insurance.  Why, you may ask? We don’t want insurance requirements and payments to get in the way of your care.  When insurance is involved, they dictate your care.  Insurance companies can decide what services you qualify for, how many visits you can have, how far apart those visits can occur, how long a visit can last, and can hold up payments to delay your care even further.  We treat you as a human with human needs, not a statistic.  We want you to have the care you need when you need it.  We keep costs affordable so that we can give you everything you need to get the maximum results for your individualized care.
 ---
