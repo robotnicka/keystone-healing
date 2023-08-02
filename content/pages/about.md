@@ -3,8 +3,6 @@ title: About
 builder:
   - type: content
     content: >-
-      
-
       What is Dr. John's philosophy about chiropractic?
 
 
@@ -28,28 +26,28 @@ builder:
 
       Who am I beyond a chiropractor? 
 
-      Family man
+      * Family man
 
-      Christian
+      * Christian
 
-      NC Native
+      * NC Native
 
-      SCUBA enthusiast
+      * SCUBA enthusiast
 
-      Gamer
+      * Gamer
 
 
       Education and training
 
-      NCSU Graduate
+      *NCSU Graduate
 
-      Palmer Graduate
+      *Palmer Graduate
 
-      AK Trained
+      *AK Trained
 
-      SOT Trained
+      *SOT Trained
 
-      Thompson Trained
+      *Thompson Trained
 
-      Activator Trained
+      *Activator Trained
 ---
