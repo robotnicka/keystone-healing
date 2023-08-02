@@ -27,10 +27,7 @@ builder:
       LLLLT when properly applied, can decrease pain, speed healing, and increase blood flow to a painful or damaged area of the body. For more information please visit Erchonia's website.
 
 
-
       [www.erchonia.com](www.erchonia.com)
-
-
 
 
       **Percussor therapy**
@@ -45,7 +42,6 @@ builder:
 
 
       Many chiropractors focus on the spine, but Dr. John recognizes that chiropractic can help the entire body. Much like the children’s song, your knee bone is connected to your thigh bone and your thigh bone is connected to your hip bone and your hip bone is connected your back bone. By treated problems down the line, you can alleviate and prevent seemingly unrelated issues. Because Dr. John takes this whole body approach, he has cultivated the knowledge to treat many different issues like sports injuries or repeated stress injuries like tendonitis or carpal tunnel.   
-
 
 
       **TMJ protocol**
@@ -64,4 +60,18 @@ builder:
 
 
       The body changes and is stressed during pregnancy. Chiropractic care has been shown to alleviate the aches and pains that go along with pregnancy and may shorten delivery times and decrease the likelihood of complications during delivery. Dr. John has worked with many new moms through their entire pregnancy journey.
+  - type: content
+    content: "#﻿# Insurance
+
+
+      At Keystone Healing Arts, we do not take insurance.  Why, you may
+      ask? We don’t want insurance requirements and payments to get in the way
+      of your care.  When insurance is involved, they dictate your
+      care.  Insurance companies can decide what services you qualify for, how
+      many visits you can have, how far apart those visits can occur, how long a
+      visit can last, and can hold up payments to delay your care even
+      further.  We treat you as a human with human needs, not a statistic.  We
+      want you to have the care you need when you need it.  We keep costs
+      affordable so that we can give you everything you need to get the maximum
+      results for your individualized care.\r\n"
 ---
