@@ -57,16 +57,14 @@ builder:
 
 
       * Why chiropractic?
-
-      * * Hands-on approach to health
+        * Hands-on approach to health
         * Feel empowered and in control of your own health
         * Become more in touch with your body
         * Help alleviate pain related to repetitive stress injuries, mental stress
         * Recover faster from injuries
         * Non-invasive, low-risk care
       * Why am I a chiropractor
-
-      * * To be able to help people
+        * To be able to help people
         * To work on finding the root problem instead of just treating symptoms
   - type: testimonialsFeatured
     quote: When I met Dr. John, the first thing I said was "Get prepared because I
