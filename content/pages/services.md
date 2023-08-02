@@ -2,7 +2,7 @@
 title: Services
 builder:
   - type: content
-    content: >-
+    content: >+
       I﻿n addition to traditional Chiropractic techniques, Dr. John incorporates
       a number of other methods into his practice to attempt to find and
       understand your particular problem and get to the cause of it rather than
@@ -60,6 +60,13 @@ builder:
 
 
       The body changes and is stressed during pregnancy. Chiropractic care has been shown to alleviate the aches and pains that go along with pregnancy and may shorten delivery times and decrease the likelihood of complications during delivery. Dr. John has worked with many new moms through their entire pregnancy journey.
+
+
+      **N﻿utritional Supplementation**
+
+
+      Why supplementation? Our modern factory farming doesn’t produce nutrient-rich food, and supplementation can help to fill in the gaps. Sometimes a problem in our bodies may be coming from a specific nutritional deficiency that supplementation may help. As we age, our digestive systems become less effective at absorbing key nutrients, so we must respond by increasing the amounts of those nutrients.
+
   - type: content
     content: >-
       ### Insurance
