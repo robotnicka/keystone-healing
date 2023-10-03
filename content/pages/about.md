@@ -6,7 +6,7 @@ builder:
       **What is Dr. John's philosophy about chiropractic?**
 
 
-      Professionalism: At Keystone Healing Arts, He strives to treat every patient with respect and compassion. He takes your concerns, problems, and symptoms seriously.  He will listen and treat you with respect and professionalism.
+      Professionalism: At Keystone Healing Arts, Dr. John strives to treat every patient with respect and compassion. He takes your concerns, problems, and symptoms seriously.  He will listen and treat you with respect and professionalism.
 
 
       Program:  Dr. John will formulate a program that will address your healthcare concerns in the best way possible. This can involve chiropractic adjustments, at-home exercise, or other therapy. He wants to make sure that you are getting the personalized care that you deserve. 
