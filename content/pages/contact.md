@@ -1,6 +1,7 @@
 ---
 title: Contact
 builder:
-  - type: content
-    content: T﻿est
+  - type: contactform
+    title: Contact us
+    photo: images/rocks.png
 ---
