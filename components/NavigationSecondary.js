@@ -20,7 +20,7 @@ export default function NavigationSecondary({ props }) {
           </a>
         </li>
         <li>
-          <Link href="/#contact-us">
+          <Link href="/contact">
             <a>
               <span className={styles.calendarIcon}>
                 <Calendar />
@@ -30,7 +30,7 @@ export default function NavigationSecondary({ props }) {
           </Link>
         </li>
         <li>
-          <Link href="/#contact-us">
+          <Link href="/contact">
             <a>
               <span className={styles.mailIcon}>
                 <Mail />
